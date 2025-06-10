@@ -1,5 +1,35 @@
-### GET request to example server
-GET https://examples.http-client.intellij.net/get
-    ?generated-in=WebStorm
+### Get all movies
+GET http://localhost:5000/api/movies
+Accept: application/json
 
+###
+
+### Create a new movie
+POST http://localhost:5000/api/movies
+Content-Type: application/json
+
+{
+  "title": "sdfgh",
+  "director": "dfghj Nolan",
+  "year": 2010
+}
+
+###
+
+### Get all reviews
+GET http://localhost:5000/api/reviews
+Accept: application/json
+
+###
+
+### Create a review
+POST http://localhost:5000/api/reviews
+Content-Type: application/json
+
+{
+  "movieId": "abc",
+  "reviewer": "Jan",
+  "content": "Super film!",
+  "rating": 4
+}
 ###
